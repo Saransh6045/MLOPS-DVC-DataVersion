@@ -1,0 +1,4 @@
+Steps:
+
+1. Create a git repo and clone it in local folder.
+2. Create a python file code.py in the cloned folder and through it, save a csv file in the new 'data' folder.
