@@ -13,7 +13,13 @@ df = pd.DataFrame(data)
 #---------------------------------------------------------------
 
 #Adding new row for second version
+'''
 new_row_loc = {'Name': 'Niharika', 'Age' : 22, 'State' : 'Delhi'}
+df.loc[len(df.index)] = new_row_loc
+'''
+
+#Adding new row for third version
+new_row_loc = {'Name' : 'Dev', 'Age' : 25, 'State' : 'Gujarat'}
 df.loc[len(df.index)] = new_row_loc
 
 #Ensuring the data directory exists at the root level
