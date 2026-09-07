@@ -10,6 +10,12 @@ data = {
 
 df = pd.DataFrame(data)
 
+#---------------------------------------------------------------
+
+#Adding new row for second version
+new_row_loc = {'Name': 'Niharika', 'Age' : 22, 'State' : 'Delhi'}
+df.loc[len(df.index)] = new_row_loc
+
 #Ensuring the data directory exists at the root level
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
@@ -21,3 +27,5 @@ file_path = os.path.join(data_dir, 'sample_data.csv')
 df.to_csv(file_path, index=False)
 
 print("Data added successfully")
+
+
